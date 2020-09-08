@@ -1,11 +1,15 @@
 # code your #valid_move? method here
 
 def valid_move?(board, index)
+  #if the move is within the board
   if index.between?(0,8) == true
+    #and if the spot is not taken 
     if position_taken?(board, index) == false
+      #valid move
       true
     end
   else
+    #else not valid move
     false
   end
 end
